@@ -1,0 +1,33 @@
+<script>
+    var nama = "Wanandi";
+    var jabatan = "Manager";
+    var status = "Belum kawin";
+    let gaji = "";
+
+
+    if (jabatan == "Manager") 
+	gaji = 10000000 
+ else if (jabatan == "Asisten Manager") 
+	gaji = 8000000 
+else if (jabatan == "Staff") gaji = 5000000 
+else gaji = 0
+
+let tunjangan_jabatan = 0.1 * gaji;
+let bpjs = 0.1 * gaji;
+let tunjangan_keluarga = (status == "menikah") ? 0.1 * gaji : 0;
+let total = gaji + tunjangan_jabatan + bpjs +tunjangan_keluarga;
+
+ document.write("Diketahui data pegawai :" + 
+ "<br/>" +
+ "<br/> Nama :" + nama +
+ "<br/> Jabatan :" + jabatan +
+ "<br/> Status :" + status +
+ "<br/> Gaji Pokok :" + gaji +
+ "<br/> Tunjangan Jabatan :" + tunjangan_jabatan +
+ "<br/> Bpjs :" + bpjs +
+ "<br/> Tunjangan Keluarga :" + tunjangan_keluarga +
+ "<br/> Total :" + total 
+ );
+ </script>
+
+    
